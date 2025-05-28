@@ -24,7 +24,7 @@ public class datatokoDAO implements datatokoimplement {
 //    INSERT INTO `datatoko` (`nama`, `barang`, `harga`, `cicilan`, `bunga`, `angsuran`, `total`) VALUES ('Adit', 'Kulkas', '48000000', '6', '72000', '872000', '5232000');
     final String insert = "INSERT INTO `datatoko` (`nama`, `barang`, `harga`, `cicilan`, `bunga`, `angsuran`, `total`) VALUES (?,?,?,?,?,?,?); ";
     final String update = "UPDATE `datatoko` SET `nama` = ?, `barang` = ?, `harga` = ?, `cicilan` = ?, `bunga` = ?, `angsuran` = ?, `total` = ? WHERE `datatoko`.`nama` = ?;" ;
-    final String delete = "DELEETE FROM datatoko WHERE datatoko . nama = ?;";
+    final String delete = "DELETE FROM datatoko WHERE datatoko . nama = ?;";
     
     public datatokoDAO(){
         connection = connector.connection();
